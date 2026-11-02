@@ -6,12 +6,12 @@
 # agent-hooks/install-agent-hooks.sh for the canonical implementation.
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/ropensci-review-tools/askfirst/main/install.sh | bash
-#   curl -fsSL https://raw.githubusercontent.com/ropensci-review-tools/askfirst/main/install.sh | bash -s -- --tool claude
-#   curl -fsSL https://raw.githubusercontent.com/ropensci-review-tools/askfirst/main/install.sh | bash -s -- --overwrite
+#   curl -fsSL https://raw.githubusercontent.com/mpadge/askfirst/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/mpadge/askfirst/main/install.sh | bash -s -- --tool claude
+#   curl -fsSL https://raw.githubusercontent.com/mpadge/askfirst/main/install.sh | bash -s -- --overwrite
 
 set -euo pipefail
 
-INSTALLER_URL="https://raw.githubusercontent.com/ropensci-review-tools/askfirst/main/agent-hooks/install-agent-hooks.sh"
+INSTALLER_URL="https://raw.githubusercontent.com/mpadge/askfirst/main/agent-hooks/install-agent-hooks.sh"
 
 curl -fsSL "$INSTALLER_URL" | bash -s -- "$@"

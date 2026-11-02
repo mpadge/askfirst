@@ -108,7 +108,7 @@ main() {
   cat <<'ASKFIRST_CONTEXT'
 
 <askfirst-context>
-This project uses askfirst (https://github.com/ropensci-review-tools/askfirst),
+This project uses askfirst (https://github.com/mpadge/askfirst),
 a system that lets R package maintainers detect when their package is being
 used from an AI coding assistant and signal structured notices.
 
@@ -476,7 +476,7 @@ const ASKFIRST_FILE_TOOLS = new Set(["edit", "write", "apply_patch"]);
 
 const ASKFIRST_CONTEXT = `
 <askfirst-context>
-This project uses askfirst (https://github.com/ropensci-review-tools/askfirst),
+This project uses askfirst (https://github.com/mpadge/askfirst),
 a system that lets R package maintainers detect when their package is being
 used from an AI coding assistant and signal structured notices.
 

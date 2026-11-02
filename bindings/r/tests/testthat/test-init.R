@@ -216,7 +216,7 @@ test_that("askfirst_signal with default prefix = TRUE includes the structured pr
   expect_match(msg, "askfirst::r::mypkg::notice", fixed = TRUE)
   expect_match(msg, "type: notice", fixed = TRUE)
   expect_match(msg, "raw message", fixed = TRUE)
-  expect_match(msg, "See: https://github.com/ropensci-review-tools/askfirst", fixed = TRUE)
+  expect_match(msg, "See: https://github.com/mpadge/askfirst", fixed = TRUE)
   expect_match(msg, "hard stop", fixed = TRUE)
   expect_match(msg, "ask the developers of mypkg", fixed = TRUE)
 })
@@ -239,7 +239,7 @@ test_that("askfirst_signal hard-stop shape includes the delimiter and imperative
   expect_match(msg, "askfirst::r::mypkg::stop-and-ask", fixed = TRUE)
   expect_match(msg, "type: capability_gap", fixed = TRUE)
   expect_match(msg, "raw message", fixed = TRUE)
-  expect_match(msg, "See: https://github.com/ropensci-review-tools/askfirst", fixed = TRUE)
+  expect_match(msg, "See: https://github.com/mpadge/askfirst", fixed = TRUE)
 })
 
 test_that("askfirst_signal with prefix = FALSE omits the hard-stop delimiter for stop-and-ask classes", {
@@ -297,7 +297,7 @@ test_that("askfirst_notice_prime puts asking the user first and only subordinate
 test_that("askfirst_read_content reads agent-content/ files verbatim", {
   text <- askfirst:::askfirst_read_content("askfirst-hooks-nudge.txt")
   expect_match(text, "{{PKG}}", fixed = TRUE)
-  expect_match(text, "https://github.com/ropensci-review-tools/askfirst", fixed = TRUE)
+  expect_match(text, "https://github.com/mpadge/askfirst", fixed = TRUE)
 })
 
 test_that("askfirst_init prints a one-time hooks-install nudge when hooks are not current, independent of confidence", {
@@ -347,7 +347,7 @@ test_that("askfirst_init signals an askfirst_hooks_nudge condition under high co
   expect_s3_class(caught, "askfirst_hooks_nudge")
   expect_s3_class(caught, "askfirst_condition")
   expect_equal(caught$pkg, "mypkg")
-  expect_match(conditionMessage(caught), "https://github.com/ropensci-review-tools/askfirst", fixed = TRUE)
+  expect_match(conditionMessage(caught), "https://github.com/mpadge/askfirst", fixed = TRUE)
 })
 
 test_that("askfirst_hooks_nudge's message is bounded by TELL-USER/END-TELL-USER delimiters, not the hard-stop or plain-notice shape", {

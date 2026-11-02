@@ -33,13 +33,13 @@ following:
 **Linux and macOS:**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ropensci-review-tools/askfirst/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/mpadge/askfirst/main/install.sh | bash
 ```
 
 **Windows (PowerShell):**
 
 ```powershell
-irm https://raw.githubusercontent.com/ropensci-review-tools/askfirst/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/mpadge/askfirst/main/install.ps1 | iex
 ```
 
 **R users:** 
@@ -107,7 +107,7 @@ original developers, to discuss extending your software.
 ### R
 
 - Add `askfirst` to your package `Imports` (currently with `Remotes:
-  ropensci-review-tools/askfirst`, as the package is not yet on CRAN).
+  mpadge/askfirst`, as the package is not yet on CRAN).
 - Describe large-scale package scenarios in an `.onLoad()` function like this:
 
   ``` r

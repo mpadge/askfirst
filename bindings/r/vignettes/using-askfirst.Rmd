@@ -79,11 +79,11 @@ If your users haven't cloned `askfirst` (or don't have R installed) yet,
 they can instead run a one-line bootstrap that fetches and runs the same
 installer directly from GitHub. On Linux and macOS:
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ropensci-review-tools/askfirst/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/mpadge/askfirst/main/install.sh | bash
 ```
 or, from PowerShell on Windows:
 ```powershell
-irm https://raw.githubusercontent.com/ropensci-review-tools/askfirst/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/mpadge/askfirst/main/install.ps1 | iex
 ```
 
 ## 1. Registering your package: `askfirst_init()`

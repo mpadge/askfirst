@@ -17,5 +17,5 @@ askfirst_lang <- function() {
 #' @keywords internal
 #' @noRd
 askfirst_url <- function() {
-  "https://github.com/ropensci-review-tools/askfirst"
+  "https://github.com/mpadge/askfirst"
 }

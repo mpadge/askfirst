@@ -1,7 +1,7 @@
 {
   "tool": "designlens",
   "version": "0.1.2",
-  "docs": "https://github.com/ropensci-review-tools/designlens/blob/main/docs/conventions.md",
+  "docs": "https://github.com/mpadge/designlens/blob/main/docs/conventions.md",
   "active": true,
   "auto_commit": true,
   "retrospective_threshold": 10,
