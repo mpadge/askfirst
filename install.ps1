@@ -7,8 +7,8 @@
 # of this wrapper.
 #
 # Usage:
-#   irm https://raw.githubusercontent.com/mpadge/install.ps1 | iex
-#   & ([scriptblock]::Create((irm https://raw.githubusercontent.com/mpadge/install.ps1))) --tool claude
+#   irm https://raw.githubusercontent.com/mpadge/askfirst/main/install.ps1 | iex
+#   & ([scriptblock]::Create((irm https://raw.githubusercontent.com/mpadge/askfirst/main/install.ps1))) --tool claude
 
 param(
   [Parameter(ValueFromRemainingArguments = $true)]
@@ -17,7 +17,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$installerUrl = "https://raw.githubusercontent.com/mpadge/agent-hooks/install-agent-hooks.sh"
+$installerUrl = "https://raw.githubusercontent.com/mpadge/askfirst/main/agent-hooks/install-agent-hooks.sh"
 $tempScript = New-TemporaryFile
 
 try {
