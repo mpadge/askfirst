@@ -93,7 +93,7 @@ Stage decisions already made in conversation (see this stage's
   this stage (see Context) — flagged for a future stage.
 
 ## Mid-Implementation Update
-The `ropensci-review-tools/askfirst` repo went public partway through this
+The `mpadge/askfirst` repo went public partway through this
 stage's implementation. This closes stage 024's deferred item directly, so
 rather than leaving the newly-created `install-hooks` job with the
 now-obsolete private-repo soft-fail split (Design Goal 3 / Proposed

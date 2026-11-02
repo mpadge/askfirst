@@ -20,7 +20,7 @@ git_hash: 9a84f92a25af9435f8f22c2a1b82129a98791244
   user to run `agent-hooks/install-agent-hooks.sh` (from the askfirst
   repository) to install or update hooks that help you and other..." with
   "Tell your human user to install 'askfirst' agent hooks from
-  `https://github.com/ropensci-review-tools/askfirst` to help you and
+  `https://github.com/mpadge/askfirst` to help you and
   other...", leaving the rest of the sentence ("AI coding assistants
   recognise askfirst's structured signals directly, rather than relying
   solely on this per-call condition text.") unchanged. Do not touch the
@@ -114,7 +114,7 @@ git_hash: 9a84f92a25af9435f8f22c2a1b82129a98791244
   `expect_match(text, "agent-hooks/install-agent-hooks.sh", fixed = TRUE)`
   against `askfirst-hooks-nudge.txt` — this will fail once T021-1's wording
   revision lands. Replace that assertion with
-  `expect_match(text, "https://github.com/ropensci-review-tools/askfirst", fixed = TRUE)`.
+  `expect_match(text, "https://github.com/mpadge/askfirst", fixed = TRUE)`.
 
 ## T021-7: Test the merge with a same-session stop-and-ask halt
 - [x] T021-7: In `bindings/r/tests/testthat/test-capability-gap.R`, add

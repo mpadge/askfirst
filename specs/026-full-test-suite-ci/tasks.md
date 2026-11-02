@@ -70,7 +70,7 @@ git_hash: 4fa90858d2c6ed69b6b1a63404524aeee1c0d008
     wiring.
 
 ## T026-5: Promote phase 2 to a hard requirement now that the repo is public
-- [x] T026-5: The `ropensci-review-tools/askfirst` repo went public partway
+- [x] T026-5: The `mpadge/askfirst` repo went public partway
   through this stage's implementation, closing stage 024's deferred item
   (`specs/024-root-install-script/design-decisions.md`'s "Deferred Items").
   Updated `tests/test-install-hooks.sh`: `phase2()` now calls `log_fail`

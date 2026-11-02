@@ -9,7 +9,7 @@ git_hash: d367e8e09e97cbbe5b7782774e18b465f7f49411
 ## T024-1: Create root-level `install.sh` wrapper
 - [x] T024-1: Create `install.sh` at the repo root. It must: start with
   `#!/usr/bin/env bash` and `set -euo pipefail`; `curl -fsSL` the raw file
-  `https://raw.githubusercontent.com/ropensci-review-tools/askfirst/main/agent-hooks/install-agent-hooks.sh`
+  `https://raw.githubusercontent.com/mpadge/askfirst/main/agent-hooks/install-agent-hooks.sh`
   and pipe it into `bash -s -- "$@"` so any arguments the caller passes
   (e.g. `--tool claude`, `--overwrite`, `--detect`) are forwarded
   unchanged; run against the caller's current `$PWD` (no `cd`, no
@@ -24,7 +24,7 @@ git_hash: d367e8e09e97cbbe5b7782774e18b465f7f49411
   counterpart to `install.sh` — a wrapper, not a reimplementation of
   installer logic. It must:
   1. Download `agent-hooks/install-agent-hooks.sh` from
-     `https://raw.githubusercontent.com/ropensci-review-tools/askfirst/main/agent-hooks/install-agent-hooks.sh`
+     `https://raw.githubusercontent.com/mpadge/askfirst/main/agent-hooks/install-agent-hooks.sh`
      to a temp file via `Invoke-WebRequest` (fail loudly — non-zero exit
      with a visible error — if the download fails, e.g. 404 while the
      repo is private).
@@ -49,10 +49,10 @@ git_hash: d367e8e09e97cbbe5b7782774e18b465f7f49411
   hooks.") with:
   1. A short intro sentence keeping the same meaning.
   2. A fenced ```bash code block containing exactly:
-     `curl -fsSL https://raw.githubusercontent.com/ropensci-review-tools/askfirst/main/install.sh | bash`
+     `curl -fsSL https://raw.githubusercontent.com/mpadge/askfirst/main/install.sh | bash`
   3. A fenced ```powershell code block containing the PowerShell
      equivalent, e.g.:
-     `irm https://raw.githubusercontent.com/ropensci-review-tools/askfirst/main/install.ps1 | iex`
+     `irm https://raw.githubusercontent.com/mpadge/askfirst/main/install.ps1 | iex`
      with a short note that this still requires Git Bash or WSL to be
      present on the machine (since `install.ps1` shells out to bash
      under the hood), and that Linux/macOS users should use the `bash`

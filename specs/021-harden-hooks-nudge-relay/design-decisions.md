@@ -60,7 +60,7 @@ the only one in the merged message).
 user to run `agent-hooks/install-agent-hooks.sh` (from the askfirst
 repository)..." phrasing was replaced with "Tell your human user to
 install 'askfirst' agent hooks from
-`https://github.com/ropensci-review-tools/askfirst`...".
+`https://github.com/mpadge/askfirst`...".
 **Rationale:** A direct repository URL rather than a script-relative path
 assumes less about the human's local environment.
 **Tradeoffs:** Scoped to the agent-directed condition text only; the

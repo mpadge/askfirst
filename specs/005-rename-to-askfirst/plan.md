@@ -52,7 +52,7 @@ defaults — flagged here for correction if wrong:
   `0.0.0.9000`) and renaming now avoids a later breaking change.
 - **GitHub org**: moot for this stage, since no rename of the external
   repo is happening here; if/when it is, staying under
-  `ropensci-review-tools` is the assumed default.
+  `mpadge` is the assumed default.
 
 All four questions have since been resolved directly by mpadge:
 1. **`flag_capability_gap()` renaming**: yes, rename to

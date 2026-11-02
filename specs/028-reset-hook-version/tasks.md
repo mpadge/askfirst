@@ -73,7 +73,7 @@ git_hash: 890fc451edc257dc0f79c69b39f6d9af0d446228
   all 6 failures to pass with no other changes needed.
 - Mid-implementation, the user separately asked to update the placeholder
   docs URL `https://ropensci.github.io/askfirst/` (a pkgdown site that
-  doesn't exist yet) to `https://github.com/ropensci-review-tools/askfirst`
+  doesn't exist yet) to `https://github.com/mpadge/askfirst`
   everywhere live. This was unrelated to the hook_version reset but applied
   in the same session: fixed the one live source
   (`bindings/r/R/lang.R`'s `askfirst_url()`) and its two dependent test

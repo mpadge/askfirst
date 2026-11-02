@@ -39,7 +39,7 @@ paths.
   R function, and running `/path/to/askfirst/agent-hooks/install-agent-hooks.sh`
   directly from a local checkout. Neither path works for someone who has
   not yet cloned/installed anything — the gap this stage closes.
-- Repo confirmed as `ropensci-review-tools/askfirst` on GitHub, default
+- Repo confirmed as `mpadge/askfirst` on GitHub, default
   branch `main` (matches `git_hash` above / recent commit history).
 - Repo visibility confirmed **private** (`gh repo view` →
   `"visibility":"PRIVATE"`). `raw.githubusercontent.com` does not serve
@@ -90,7 +90,7 @@ paths.
 ## Proposed Approach
 - **`install.sh` (new, repo root):** a thin wrapper, not a duplicate. It
   `curl`s `agent-hooks/install-agent-hooks.sh` from
-  `https://raw.githubusercontent.com/ropensci-review-tools/askfirst/main/agent-hooks/install-agent-hooks.sh`
+  `https://raw.githubusercontent.com/mpadge/askfirst/main/agent-hooks/install-agent-hooks.sh`
   and execs it via `bash -s -- "$@"`, forwarding any arguments (e.g.
   `--tool claude`, `--overwrite`) the caller passed. Runs against the
   caller's current `$PWD`, matching `install-agent-hooks.sh`'s own
@@ -111,7 +111,7 @@ paths.
 - **README.md revision:** replace the current one-line "please install
   agent-specific hooks" sentence under "askfirst for everybody" with:
   - A fenced `bash` code block containing the copy-paste one-liner:
-    `curl -fsSL https://raw.githubusercontent.com/ropensci-review-tools/askfirst/main/install.sh | bash`
+    `curl -fsSL https://raw.githubusercontent.com/mpadge/askfirst/main/install.sh | bash`
   - A fenced `powershell` code block containing the PowerShell
     equivalent using `install.ps1`, for users who want a native
     PowerShell entry point (still requires Git Bash or WSL to be present

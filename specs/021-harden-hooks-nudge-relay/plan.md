@@ -13,7 +13,7 @@ hard-stop markers), and merge a `hooks_nudge` with a same-session
 `stop-and-ask` halt into one emitted block, so a human-directed relay
 instruction isn't dropped when an agent's summary collapses toward the
 single most consequential signal. This closes a field-observed gap
-(`askfirst-advice.md`, `ropensci-review-tools/askfirst-tests`) that doesn't
+(`askfirst-advice.md`, `mpadge/askfirst-tests`) that doesn't
 match any of the six failure modes already catalogued in that sibling
 repo's `failure-examples.md`.
 
@@ -120,7 +120,7 @@ body text also changes, at mpadge's direction: the
 the askfirst repository) to install or update hooks that help you and
 other..." phrasing is replaced with "Tell your human user to install
 'askfirst' agent hooks from
-`https://github.com/ropensci-review-tools/askfirst` to help you and
+`https://github.com/mpadge/askfirst` to help you and
 other...", with the remainder of the sentence unchanged. This only
 touches the agent-directed condition text (`askfirst_hooks_nudge`'s own
 body); the separate, unchanged human-directed console nudge from stage
@@ -184,7 +184,7 @@ type: hooks_nudge
 This project has no current askfirst-aware agent hooks installed (or they
 are stale) -- detected while loading {pkg}. Tell your human user to
 install 'askfirst' agent hooks from
-https://github.com/ropensci-review-tools/askfirst to help you and other
+https://github.com/mpadge/askfirst to help you and other
 AI coding assistants recognise askfirst's structured signals directly,
 rather than relying solely on this per-call condition text.
 
@@ -229,7 +229,7 @@ before implementation (see Resolved During Review).
   from "Tell your human user to run `agent-hooks/install-agent-hooks.sh`
   (from the askfirst repository) to install or update hooks that help you
   and other..." to "Tell your human user to install 'askfirst' agent
-  hooks from `https://github.com/ropensci-review-tools/askfirst` to help
+  hooks from `https://github.com/mpadge/askfirst` to help
   you and other...", remainder of the sentence unchanged. Scoped to the
   agent-directed condition text only — stage 014's separate human-directed
   console nudge is untouched. (mpadge)
